@@ -10,6 +10,9 @@ COPY requirements.txt ./
 # Install Python dependencies using pip
 RUN pip install -r requirements.txt
 
+# Add a new layer for a specific dependency
+# RUN pip install pandas  # This creates a new layer
+
 # Copy the application code
 COPY app.py .
 
