@@ -4,7 +4,7 @@ This repository hosts all components needed to build a containerized API with Py
 
 ## Prerequisites
 
-- Rancher Desktop, or any tool with the Docker CLI.
+- Docker CLI installed
 - (Optional) Python 3.11+ for testing
 
 ## Build Instructions
