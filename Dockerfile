@@ -4,6 +4,15 @@ FROM python:3.11-slim
 # Set a working directory within the container
 WORKDIR /app
 
+# create the appuser
+RUN useradd -m appuser
+
+# change the owner of current dir to appuser
+RUN chown appuser .
+
+# now we can change the user
+USER appuser
+
 # Copy the requirements.txt file
 COPY requirements.txt ./
 
