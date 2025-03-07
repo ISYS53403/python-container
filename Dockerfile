@@ -1,5 +1,5 @@
 # Use a lightweight Python base image:tag
-FROM python:3.11-slim
+FROM --platform=amd64 python:3.13.2-slim
 
 # Set a working directory within the container
 WORKDIR /app
